@@ -26,7 +26,8 @@ fs.readFile('./fixture.js', function (err, raw)
   "<h1> Comment Coverage </h1>" +
   "<h2> LOC: " + loc + "</h2>" +
   "<h2> Commented Blocks: " + cbs + "</h2>" +
-  "<h2> CB per line: " + (cbs / loc) + "</h2>" +
+  "<h2> CB per line: " + (cbs / loc) + " (max: 0.5) </h2>" +
+  "<h2> lines per CB: " + (loc / cbs) + "</h2>" +
   "</div>"
 
 
